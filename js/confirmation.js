@@ -1,5 +1,5 @@
-//  <><><><><><><><><><>  Global Cart <><><><><><><><><><>
 
+//  <><><><><><><><><><>  Global Cart <><><><><><><><><><>
 function onLoadCartNumbers() {
     let productNumbers = localStorage.getItem('globalCart');
     let productInCart = document.getElementById('product-in-cart')
@@ -10,10 +10,7 @@ function onLoadCartNumbers() {
 }
 onLoadCartNumbers();
 
-
-
 //  <><><><><><><><><><>  Confirmation <><><><><><><><><><>
-
 let firstName = document.getElementById("first-name");
 let numberOfItems = document.getElementById("number-of-items");
 let orderId = document.getElementById("order-id");

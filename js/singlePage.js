@@ -5,16 +5,11 @@ let searchIdParams = new URLSearchParams(currentUrl.search);
 let urlId = searchIdParams.get('id');
 let singlePageUrl = 'http://localhost:3000/api/teddies/'+urlId;
 
-//  <><><><><><><><><><>  GET THE ID PARAM <><><><><><><><><><>
-// const queryString = window.location.search;
-// console.log(queryString);
-
 //  <><><><><><><><><><>  FETCH PER ID <><><><><><><><><><>
 
 let articleName = document.getElementById('single-product__name');
 let articlePrice = document.getElementById('single-product__price');
 let articleDescription = document.getElementById('single-product__description');
-// let articleColors = document.getElementById('single-product__colors');
 let articleOptionsContainer = document.getElementById('options-container');
 let articleImg = document.getElementById('single-product__img');
 
@@ -30,8 +25,6 @@ function fetchSinglePage(data) {
 
     for (var i=0; i < data.colors.length; i++) {
 
-        // var colorSelectBox = document.createElement('div');
-        // var colorOptionContainer = document.createElement('div');
         var colorDiv = document.createElement('div');
 
         var colorInput = document.createElement('input');
@@ -39,8 +32,6 @@ function fetchSinglePage(data) {
 
         colorLabel.innerHTML += "   " + data.colors[i];
 
-        // colorSelectBox.classList.add('select-box');
-        // colorOptionContainer.classList.add('option-container');
         colorDiv.classList.add('option');
         colorDiv.setAttribute('id','option' + [i]);
         colorInput.setAttribute("type", "radio");
@@ -54,10 +45,6 @@ function fetchSinglePage(data) {
         colorDiv.appendChild(colorLabel);
 
         articleOptionsContainer.appendChild(colorDiv);
-        // colorSelectBox.appendChild(colorOptionContainer);
-        // articleColorsContainer.appendChild(colorSelectBox);
-
-
     }
 
     const selected = document.querySelector(".selected");
@@ -80,8 +67,6 @@ function fetchSinglePage(data) {
     const defaultRadioButton = document.getElementById("option0");
     const defaultRadioButton1 = document.getElementById("option1");
     defaultRadioButton.firstElementChild.setAttribute("checked", "checked");
-
-    // articleColors.insertBefore(defaultRadioButton, defaultRadioButton1) ;
 
     // click function
 

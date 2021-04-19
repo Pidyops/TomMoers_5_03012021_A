@@ -94,7 +94,6 @@ function deletebuttons() {
 
         for(let i=0; i < deletebuttons.length; i++) {
                 deletebuttons[i].addEventListener('click', () => {
-                // productNameContent = productName[i].textContent.trim().toLowerCase().replace(/ /g, '');
                 productNameContent = Object.keys(cartItems)[i];
                 // console.log(productNameContent);
                 // console.log(cartItems[productNameContent]);
@@ -131,10 +130,9 @@ function manageQuantity() {
     for(let i=0; i < decreaseButtons.length; i++) {
         decreaseButtons[i].addEventListener('click', () => {
             currentQuantity = decreaseButtons[i].nextElementSibling.textContent;
-            console.log(currentQuantity)
-            // currentProduct = decreaseButtons[i].parentElement.previousElementSibling.textContent.trim();
+            // console.log(currentQuantity)
             currentProduct = Object.keys(cartItems)[i];
-            console.log(currentProduct);
+            // console.log(currentProduct);
 
         if(cartItems[currentProduct].inCart > 0) {
             cartItems[currentProduct].inCart -= 1;
@@ -172,7 +170,6 @@ function manageQuantity() {
             console.log(cartItems[currentProduct].inCart)
             localStorage.setItem('productsInCart', JSON.stringify(cartItems));
 
-
             //total cost
             let cartCost = localStorage.getItem('totalCost')
             cartCost = parseInt (cartCost);
@@ -196,10 +193,6 @@ const lastName = document.getElementById('lastName');
 const address = document.getElementById('address');
 const city = document.getElementById('city');
 
-// form.addEventListener('submit', (e) => {
-//     e.preventDefault(); // if error, do not accomplish the action
-    
-
 // })
 
 function checkInputs() {
@@ -211,8 +204,6 @@ function checkInputs() {
 
     if(emailValue =='') {
         setErrorFor(email, 'please enter your email'); 
-    // } else if (!isEmail(emailValue)) {
-    //     setErrorFor(email, 'email is not valid yet ;)'); 
     } else {
         //add success class
         setSuccessFor(email); //write the username
@@ -254,25 +245,15 @@ function setErrorFor(input, message) { // input = username and message = "Userna
     const formControl = input.parentElement; // .form__control // = username.parentElement
     const small = formControl.querySelector('small');
     
-    //add error message inside small
-    small.innerText = message; //???? (OK) why do I declare it in this function since it is already line 152? and why if I swap message and innerText, is it not working anymore? // Hard for me to understand the relation make a function and call it.
+    small.innerText = message;
 
-    //add error class
-    formControl.className = 'form__control form__control--error' // add a class
+    formControl.className = 'form__control form__control--error' // add error class
 }
 
 function setSuccessFor(input) {
     const formControl = input.parentElement; // .form__control
     formControl.className = "form__control form__control--success"; //add a class
 } 
-
-// function isEmail(email) {
-//     return /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|
-//     (\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|
-//     (([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
-// }
-
-
 
 //  <><><><><><><><><><> XML <><><><><><><><><><>
 
@@ -331,7 +312,6 @@ function makeRequest(data) {
   });
 }
 
-
 async function submitFormData(post) {
   try { //if any of this code through an error, we will send the catch block
     const requestPromise = makeRequest(post);
@@ -346,11 +326,6 @@ async function submitFormData(post) {
     localStorage.setItem("responseFirstName", response.contact.firstName);
     localStorage.setItem("responseOrderId", response.orderId);
     window.location = 'confirmation.html';
-    // responseContent.textContent = response.post.content;
-
-    // contact: req.body.contact,
-    // products: teddies,
-    // orderId: orderId
     
   } catch (errorResponse) {
     console.log(errorResponse);

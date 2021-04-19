@@ -1,0 +1,116 @@
+.header {
+
+    &-container {
+        // border: 1px solid tomato;
+        display: flex;
+        
+        width: 80%;
+        margin: 0 auto; 
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: rgba(96,125,139,255)
+
+        
+    }
+
+    &__banner {
+      height: 65px;
+    }
+
+    &-logo {
+        // border: 1px solid lightskyblue;
+        height: 50px;
+        object-fit: cover;
+        display: flex;
+        // padding: 5px 0 5px 0;
+        padding: 11px 1px 5px 8px;
+        justify-content: center;
+        // padding-left: 30px;
+        // padding-right: 30px;
+    }
+    
+    &-cart{
+      position: absolute;
+      right: 0;
+        padding: 0 30px 0 30px 0;
+        // border: 1px solid pink;
+        padding: 30px;
+        align-self: center;
+        color: black;
+
+        &__icon {
+            font-size: 1rem;
+            position: relative;
+            color: white;
+        }
+
+        &__number {
+          font-size: 0.8rem;
+          color: white;
+        }
+    }
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: #a55eea;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+// @media all and (min-width: 600px) {
+//     .header {
+
+//       &__banner {
+//         display: none;
+//       }
+
+//       &-container {
+//           border: 1px solid tomato;
+//           display: flex;
+//           justify-content: center;
+//           position: relative;
+//       }
+
+//       &-logo {
+//           border: 1px solid lightskyblue;
+//           height: 80px;
+//           display: flex;
+//           padding: 5px 0 5px 0;
+//           justify-content: center;
+//           // padding-left: 30px;
+//           // padding-right: 30px;
+//       }
+      
+//       &-cart{
+//       position: absolute;
+//       right: 50px;
+//       padding: 0 30px 0 30px 0;
+//       border: 1px solid pink;
+//       padding: 30px;
+//       align-self: center;
+//       color: black;
+
+//         &__icon {
+
+//         }
+
+//         &__number {
+          
+//         }
+//       }
+//     }
+// }

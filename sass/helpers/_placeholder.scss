@@ -1,0 +1,31 @@
+// %flex-center {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// %flex-column {
+//     display: flex;
+//     flex-direction: column;
+// }
+
+%shadow-card {
+    -webkit-box-shadow: 2px 4px 7px 4px rgba(148,148,148,0.46); 
+    box-shadow: 2px 4px 7px 4px rgba(148,148,148,0.46);
+}
+
+// %shadow-card--drop {
+//     -webkit-box-shadow: 2px 5.8px 7px 4px rgba(148,148,148,0.46); 
+//     box-shadow: 2px 5.8px 7px 4px rgba(148,148,148,0.46);
+// }
+
+
+// %logo-font {
+//     font-family: 'Shrikhand', cursive;
+
+// }
+
+// %mq-block-margin {
+//     padding: 20px 50px 50px 50px;
+// }
+

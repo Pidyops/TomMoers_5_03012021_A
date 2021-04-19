@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/main.css" >
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <script src="https://kit.fontawesome.com/f4b68757aa.js" crossorigin="anonymous"></script>
+    <title>single page</title>
+<body>
+
+    <!-- <><><><><><><><><><>  Header <><><><><><><><><><> -->
+    <header class="header-container">
+        <a  href="index.html">
+            <img class="header-logo" src="img/orinoco_justName-removebg-preview.jpg" alt="Orinoco Logo">
+        </a>
+
+        <a href="cart.html" class="header-cart">
+            <i class="fas fa-shopping-cart header-cart__icon"></i>
+            <span id='product-in-cart' class="header-cart__number"></span>
+        </a>
+        
+    </header>
+
+    <div class="header__banner"></div>
+
+    <!-- <><><><><><><><><><>  Product <><><><><><><><><><> -->
+    <div id="single-product__flex">
+        <div id="single-product__flex--a">
+            <h1 id='single-product__name'>name</h1>
+            <h2 id='single-product__price'>price</h2>
+
+            <div id='single-product__description'>description</div>
+
+            
+
+            <div class="container" id="container">
+                <div class="select-box">
+                    
+                    <div class="options-container" id="options-container">
+                        
+
+                    </div>
+
+                    <div class='single-product__select-colors selected'>Select your color</div>
+                    <div class="icon"><i class="fas fa-chevron-down icon-drop"></i></div>
+                </div>       
+                <!-- <div id='single-product__colors'></div> -->
+          </div>
+
+            <button class="single-product__button" type="button" id="add-cart">Add To Cart</button>
+
+        </div>
+
+        <div id="single-product__flex--b">
+            <img id='single-product__img'>
+        </div>
+    
+    </div>
+
+<!-- <><><><><><><><><><>  Footer  <><><><><><><><><><> -->
+<footer class="footer">
+    <div></div>
+            <div class="footer__flex-container">
+                <div class="footer__bullet-point abc"><a href="#" target="_blank">About Us</a></div>
+                <div class="footer__bullet-point"><a href="#" target="_blank">Shipping + Returns</a></div>
+                <div class="footer__bullet-point"><a href="#" target="_blank">Wholesale Orders</a></div>
+                <div class="footer__bullet-point"><a href="mailto:tommoers36@hotmail.com" target="_blank" rel="noopener noreferrer">contact</a></div>
+                <div class="footer__bullet-point"><a href="#" target="_blank">Legal</a></div>        
+            </div> 
+    
+</footer>
+
+<!-- <><><><><><><><><><>  Js  <><><><><><><><><><> -->
+<script src="js/singlePage.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/main.css" >
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <script src="https://kit.fontawesome.com/f4b68757aa.js" crossorigin="anonymous"></script>
+    <title>Cart</title>
+<body>
+    <!-- <><><><><><><><><><>  Header <><><><><><><><><><> -->
+    <header class="header-container">
+        <a  href="index.html">
+            <img class="header-logo" src="img/orinoco_justName-removebg-preview.jpg" alt="Orinoco Logo">
+        </a>
+
+        <a href="cart.html" class="header-cart">
+            <i class="fas fa-shopping-cart header-cart__icon"></i>
+            <span id='product-in-cart' class="header-cart__number"></span>
+        </a>
+        
+    </header>
+
+    <div class="header__banner"></div>
+
+    <!-- <><><><><><><><><><>  products <><><><><><><><><><> -->
+    <h1 id="cart__flex--title">Your cart</h1>
+
+    <div class="products"></div>
+
+    <!-- <><><><><><><><><><>  Form <><><><><><><><><><> -->
+    <section class="form">
+        <div class="form__container">
+            <div class="form__header">
+                <h2>Contact information</h2>
+            </div>
+            <form class="form__form" id="form">
+
+                <div class="form__control">
+                    <label>Email</label>
+                    <input type="email" placeholder="enter your email" id="email">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+
+                <div class="form__control">
+                    <label>First Name</label>
+                    <input type="text" placeholder="enter your first name" id="firstName">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+
+                <div class="form__control">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="enter your last name" id="lastName">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+
+                <div class="form__control">
+                    <label>Address</label>
+                    <input type="text" placeholder="enter your adresse" id="address">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+
+                <div class="form__control">
+                    <label>City</label>
+                    <input type="text" placeholder="enter your city" id="city">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+
+
+                    <button id="submit-button">Submit</button>
+
+
+
+
+                <!-- <button onclick="location.href='confirmation.html'" type="button" id="submit-button">confirmation page</button>
+
+                <a href="confirmation.html">
+                    hello
+                </a>
+
+                <form action="confirmation.html">
+                    <input type="submit" value="Go to Google" />
+                </form>
+
+                <a href="confirmation.html" id="submit-button">Go to Google</a> -->
+                
+
+            </form>
+        </div>
+    </section>
+<!-- <><><><><><><><><><>  response POST  <><><><><><><><><><> -->
+   
+
+<span id="response-first-name"></span>
+<span id="response-id"></span>
+<div id="response-title"></div>
+
+
+
+<!-- <><><><><><><><><><>  Footer  <><><><><><><><><><> -->
+<footer class="footer">
+    <div></div>
+            <div class="footer__flex-container">
+                <div class="footer__bullet-point abc"><a href="#" target="_blank">About Us</a></div>
+                <div class="footer__bullet-point"><a href="#" target="_blank">Shipping + Returns</a></div>
+                <div class="footer__bullet-point"><a href="#" target="_blank">Wholesale Orders</a></div>
+                <div class="footer__bullet-point"><a href="mailto:tommoers36@hotmail.com" target="_blank" rel="noopener noreferrer">contact</a></div>
+                <div class="footer__bullet-point"><a href="#" target="_blank">Legal</a></div>        
+            </div> 
+    
+</footer>
+
+<!-- <><><><><><><><><><>  JS  <><><><><><><><><><> -->
+<script src="js/cart.js"></script>
+
+
+</body>
+</html>
+
+
+

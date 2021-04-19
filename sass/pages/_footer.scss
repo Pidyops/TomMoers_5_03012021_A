@@ -1,0 +1,58 @@
+.footer {
+    font-size: 1rem;
+    background-color: #1a2229;
+    color: white;
+    padding: 15px 0 25px 15px;
+    margin
+
+
+    &__bullet-point {
+
+        padding-bottom: 4px;
+        font-size: 1rem;
+    }
+    
+
+footer.a {
+    color: white;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    font-size: 0.8rem;
+
+        &:link {
+            color: white;
+        }
+        &:visited {
+            color: white;
+        }
+    }
+}   
+
+
+@media all and (min-width: 600px) {
+   
+    .footer {
+        padding: 40px 60px 40px 60px;
+
+        &__bullet-point {
+            padding-left: 0px;
+        }
+
+        &__logo {
+            padding: 0 0 20px 0;
+        }
+        
+
+        &__flex-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        ul {
+            
+        }
+    }
+}

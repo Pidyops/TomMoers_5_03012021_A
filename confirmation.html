@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/main.css" >
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <script src="https://kit.fontawesome.com/f4b68757aa.js" crossorigin="anonymous"></script>
+    <title>Cart</title>
+<body>
+    <!-- <><><><><><><><><><>  Header <><><><><><><><><><> -->
+    <header class="header-container">
+        <a  href="index.html">
+            <img class="header-logo" src="img/orinoco_justName-removebg-preview.jpg" alt="Orinoco Logo">
+        </a>
+
+        <a href="cart.html" class="header-cart">
+            <i class="fas fa-shopping-cart header-cart__icon"></i>
+            <span id='product-in-cart' class="header-cart__number"></span>
+        </a>
+        
+    </header>
+
+    <div class="header__banner"></div>
+
+<!-- <><><><><><><><><><>  response POST  <><><><><><><><><><> -->
+   
+<div class="confirmation">
+    <div class="confirmation__header" id="first-name"></div>
+
+    <div class="confirmation__container">
+        <div class="confirmation__item"><i class="fas fa-truck"></i> On the way</div>
+            <div class="confirmation__info" id="number-of-items"></div>
+            <div class="confirmation__info" id="order-id"></div>
+        
+        <div class="confirmation__item"><i class="fas fa-tags"></i> Shipment total</div>
+            <div class="confirmation__info" id="total-price"></div>
+        
+    </div>
+
+
+</div>
+
+
+
+    <!-- <div>We thank you for your order!</div>
+    <div>Our team will prepare your order and notice you shortly.</div>
+    
+</div>
+
+</div>
+    <span>Please keep your order id: </span>
+    <span id="response-id"></span>
+    <span>, this one will allow you to track the status of your order and to get invoice.</span>
+    <div>We will send you more information by mail.</div>
+</div>
+
+<div>Feel free to contact us for any further information.</div>
+<div>All the best,</div>
+<div>Orinico Team</div> -->
+
+
+<!-- <><><><><><><><><><>  Footer  <><><><><><><><><><> -->
+<footer class="footer">
+    <div></div>
+            <div class="footer__flex-container">
+                <div class="footer__bullet-point abc"><a href="#" target="_blank">About Us</a></div>
+                <div class="footer__bullet-point"><a href="#" target="_blank">Shipping + Returns</a></div>
+                <div class="footer__bullet-point"><a href="#" target="_blank">Wholesale Orders</a></div>
+                <div class="footer__bullet-point"><a href="mailto:tommoers36@hotmail.com" target="_blank" rel="noopener noreferrer">contact</a></div>
+                <div class="footer__bullet-point"><a href="#" target="_blank">Legal</a></div>        
+            </div> 
+    
+</footer>
+
+<!-- <><><><><><><><><><>  JS  <><><><><><><><><><> -->
+<script src="js/confirmation.js"></script>
+
+
+</body>
+</html>

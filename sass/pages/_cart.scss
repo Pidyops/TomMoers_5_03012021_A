@@ -2,34 +2,27 @@
 // <><><><><><><><><><>  Product  <><><><><><><><><><>
 
 .products {
-    background-color: rgba(220, 220, 220, 0.891);
+    background-color: $lighten-color-secondary;
 }
 
 
 #cart__flex {
     display: flex;
-    // border: 1px teal dashed;
     margin: 0 15px 15px 15px;
-    -webkit-box-shadow: 2px 4px 7px 4px rgba(148,148,148,0.46); 
-    box-shadow: 2px 4px 7px 4px rgba(148,148,148,0.46);
+    @extend %shadow-card;
     border-radius: 15px;
     height: 90px;
     background-color: white;
 
     &--title {
-        background-color: rgba(220, 220, 220, 0.891);
+        background-color: $lighten-color-secondary;
         margin: 0;
         padding: 15px;
         padding-bottom: 20px;
-
-
-
     }
     
-
     &--item1 {
         flex: 0.9;
-        // border: 1px teal dashed;
     }
     &--item2 {
         flex: 1;
@@ -37,7 +30,6 @@
     }
     &--item3 {
         flex: 0.5;
-        // border: 1px teal dashed;
         position: relative;
     }
 }
@@ -130,12 +122,10 @@
 
     &__title {
         padding-bottom: 20px;
-
     }
 
     &__total {
         padding-right: 10px;
-
     }
 }
 
@@ -176,50 +166,34 @@
     
         &__color {
             font-size: 1rem;
-            // font-weight: 100;
         }
     
         &__color--selected {
             font-size: 1rem;
-            // font-weight: 100;
         }
     
         &__quantity {
             padding-top: 20px;
             font-size: 1rem;
-            // font-weight: 300;
         }
     
         &__minus {
             padding-top: 20px;
             font-size: 1rem;
-            // font-weight: 300;
-            // padding-left: 5px;
         }
     
         &__number-of-item {
             padding-top: 20px;
             font-size: 1rem;
-            // font-weight: 300;
-            // padding-left: 4px;
-            // padding-right: 4px;
         }
     
         &__plus {
             padding-top: 20px;
             font-size: 1rem;
-            // font-weight: 300;
         }
     
         &__delete {
-            // padding-top: 20px;
-            // font-size: 0.9rem;
-            // background: white;
-            // border: white;
-            // position: absolute;
-            // top: 0px;
-            // right: 11px;
-            
+
         }
     
         &__price {
@@ -234,10 +208,7 @@
     
     .basket-total {
         &__container {
-            // display: flex;
             margin: 50px;
-            // border-top: 1px solid grey;
-            // justify-content: space-between ;
         }
     
         &__title {
@@ -250,7 +221,6 @@
     
         }
     }
-    
 }
 
 
@@ -258,14 +228,9 @@
 // <><><><><><><><><><>  Form  <><><><><><><><><><>
 
 .form {
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
     padding: 15px;
 
     &__header {
-        
-
             & h2 {
                 margin: 0;
             }
@@ -282,7 +247,6 @@
         flex-direction: column;
 
             & label {
-                // display: inline-block;
                 margin-bottom: 5px;
             }
 
@@ -292,15 +256,14 @@
                 display: block;
                 font-size: 14px;
                 padding: 10px;
-                // width: 100%;
             }
 
             &--success input {
-                border-color: #2ecc71;
+                border-color: $color-green;
             }
 
             &--error input {
-                border-color: #e74c3c;
+                border-color: $color-red;
             }
 
             & i {
@@ -312,12 +275,12 @@
 
             &--success i.fa-check-circle {
                 visibility: visible;
-                color: #2ecc71;;
+                color: $color-green;
             }
 
             &--error i.fa-exclamation-circle {
                 visibility: visible;
-                color: #e74c3c;
+                color: $color-red;
             }
 
             & small {
@@ -329,11 +292,8 @@
 
             &--error small {
                 visibility: visible;
-                color: #e74c3c;
+                color: $color-red;
             }
-
-
-
         }
 
 
@@ -359,13 +319,9 @@
     @media all and (min-width: 500px) {
         .form {
             padding: 0 50px;
-
-
         }
 
         &__header {
-        
-
             & h2 {
                 font-size: 1.2rem;
             }

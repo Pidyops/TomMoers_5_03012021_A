@@ -1,11 +1,9 @@
 // HELPERS
-// @import "helpers/base";
-// @import "helpers/mixins";
+@import "helpers/base";
 @import "helpers/placeholder";
 @import "helpers/variables";
 
 // PAGES
-
 @import "pages/footer";
 @import "pages/header";
 @import "pages/single-product";
@@ -17,18 +15,6 @@ body {
     margin: 0;
 }
 
-h1 {
-    font-weight: 900;
-    font-size: 1.3rem;
-    padding-left: 15px;
-    margin-top: 30px;
-}
-
-h2 {
-    
-    font-size: 1.1em;
-    font-weight: 900;
-}
 
 
 
@@ -41,7 +27,6 @@ h2 {
 
 .home {
     &-item {
-        // border: 1px blue dashed;
         padding: 0;
         border-radius: 15px;
         margin-bottom: 15px;
@@ -49,12 +34,7 @@ h2 {
 
     }
 
-    &-a {
-
-    }
-
     &-image {
-        // border: 1px blue dashed;
         height: 300px;
         width: 100%;
         -o-object-fit: cover;
@@ -63,34 +43,23 @@ h2 {
         
     }
     &-title {
-        // border: 1px blue dashed;
         color: black;
         display: block;
-        
         padding-top: 7px;
         padding-bottom: 13px;
         margin: 10px 0 0 10px;
         text-align: center;
-
         margin: 0 auto;
     }
 }
 
-
 @media all and (min-width: 600px) {
-
-
-    #article-container {
-
-
-        
+    #article-container { 
         display: flex;
         flex-wrap: wrap ;
         justify-content: center;
         justify-content: space-around;
     }
-    
-    
     
     .home {
         &-item {
@@ -98,16 +67,13 @@ h2 {
             border-radius: 15px;
             margin-bottom: 50px;
             flex-basis: 40%;
-
-    
         }
+
         &-item5 {
             padding: 0;
             border-radius: 15px;
             margin-bottom: 15px;
             flex-basis: 90%;
-
-    
         }
 
         &-image5 {
@@ -117,6 +83,5 @@ h2 {
             object-fit: cover;
             border-radius: 15px 15px 0 0;
     }
-
 } 
 }
